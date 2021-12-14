@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'roboto' ;
+    src: url('fonts/Roboto-Regular.ttf') format('truetype')
+}
+
+* {
+    font-family: 'roboto', arial, serif;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo_ohmyfood {
+    width: 100%;
+}
+#logo_ohmyfood img{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#localisation {
+    background-color: #f2f2f2;
+}
+
+.img_restaurant {
+    max-width: 100%;
+}
+
+#logo_footer {
+    width: 100%;
+}
+
+#logo_footer img {
+    width: 100%;
+}
