@@ -5,6 +5,13 @@
 @import 'layout/nav';
 @import 'layout/fonctionnement';
 @import 'layout/restaurants';
+@import 'layout/footer';
+
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
 
 body {
     width: 100%;
