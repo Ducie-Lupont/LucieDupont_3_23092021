@@ -1,27 +1,23 @@
 @font-face {
   font-family: "roboto";
-  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+.shrikhand {
+  font-family: "shrikhand", arial, serif;
+}
+
 * {
-  font-family: "roboto", arial, serif;
+  font-family: "roboto", arial, sans-serif;
 }
 
 body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-}
-
-#logo_ohmyfood {
-  width: 100%;
-}
-
-#logo_ohmyfood img {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 15px;
-  margin-top: 30px;
 }
 
 #localisation {

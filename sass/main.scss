@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'roboto' ;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype')
+}
+
+.shrikhand {
+    font-family: 'shrikhand', arial, serif;
+}
+
+* {
+    font-family: 'roboto', arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#localisation {
+    background-color: #f2f2f2;
+}
+
+.img_restaurant {
+    max-width: 100%;
+}
+
+#logo_footer {
+    width: 100%;
+}
+
+#logo_footer img {
+    width: 100%;
+}
