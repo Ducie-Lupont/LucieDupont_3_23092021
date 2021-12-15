@@ -1,16 +1,13 @@
 @import 'base/fonts';
-@import 'base/colors';
+@import 'base/colors-shadows';
 
 @import 'layout/header';
 @import 'layout/nav';
+@import 'layout/fonctionnement';
+@import 'layout/restaurants';
 
 body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-}
-
-
-.img_restaurant {
-    max-width: 100%;
 }
