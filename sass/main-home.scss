@@ -2,15 +2,21 @@
 @import 'base/colors-shadows';
 
 @import 'layout/header';
-@import 'layout/nav';
-@import 'layout/fonctionnement';
-@import 'layout/restaurants';
 @import 'layout/footer';
 
+@import 'pages/home/nav';
+@import 'pages/home/fonctionnement';
+@import 'pages/home/restaurants';
+
+@import 'pages/menu/photo-menu';
+@import 'pages/menu/corps-menu';
+@import 'pages/menu/btn-menu';
+
+
 html {
+    width: 100%;
     margin: 0px;
     padding: 0px;
-    width: 100%;
 }
 
 body {

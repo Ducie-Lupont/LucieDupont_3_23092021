@@ -1,0 +1,13 @@
+button {
+    width: 50%;
+    height: 50px;
+    margin: 30px 25% 0px 25%;
+    padding-bottom: 0px;
+    background: linear-gradient($secondaire, $primaire);
+    color: white;
+    font-weight: lighter;
+    box-shadow: $ombre;
+    border: none;
+    border-radius: 25px;
+
+}
