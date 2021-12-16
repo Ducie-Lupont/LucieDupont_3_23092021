@@ -1,16 +1,17 @@
-h1 {
+.titre_menu {
     margin: -40px 0px 0px 0px;
     padding: 30px 0px 15px 25px;
     position: relative;
     background: $fond-clair;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
+    width: auto;
 
 
     i {
         color: $darkgrey-text;
         position: absolute;
-        bottom: 22px; right: 50px;
+        bottom: 22px; right: 30px;
     }
 }
 .fond-menu {
@@ -33,7 +34,7 @@ h1 {
             color: $darkgrey-text;
             position: relative;
         }
-
+@media screen and (max-width: 767px){
         span {
             width: 10%;
             height: 3px;
@@ -41,7 +42,7 @@ h1 {
             position: absolute;
             bottom: -7px; left: 0px;
 
-        }
+        }}
     }
 }
 
@@ -92,3 +93,36 @@ h1 {
 
 }
 
+@media screen and (min-width: 768px){
+
+.titre_menu{
+    text-align: center;
+    font-size: xx-large;
+
+    i{
+        bottom: 22px; right: 100px;
+        font-size:x-large;
+    }
+}
+
+.categorie-menu {
+
+    h2{
+        text-align: center;
+    }
+
+    span{
+        width: 10%;
+        height: 5px;
+        background: $tertiaire;
+        position: absolute;
+        bottom: -7px; left: 45%;
+    }
+}
+
+.plat{
+    max-width: 70%;
+    margin-left: 15%;
+}
+
+}

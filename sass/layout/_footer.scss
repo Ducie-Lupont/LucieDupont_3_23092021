@@ -30,3 +30,13 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+footer{
+    h3{ margin-left: 20px;}
+    ul{
+        li{
+            padding-left: 20px;
+    }}
+}
+}

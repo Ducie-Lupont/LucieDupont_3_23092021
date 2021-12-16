@@ -17,3 +17,18 @@ header {
         color: $darkgrey-text;
     }
 }
+
+@media screen and (min-width: 768px){
+
+header {
+    img {
+        width: 36%;
+        margin-left: 32%;
+    }
+
+    .fa-arrow-left {
+        top: 40px; left: 40px;
+    }
+}
+    
+}
