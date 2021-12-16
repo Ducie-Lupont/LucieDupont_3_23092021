@@ -40,3 +40,29 @@ footer{
     }}
 }
 }
+
+@media screen and (min-width: 992px){
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: x-large;
+    h3{
+        width: 92%;
+        font-size: xxx-large;
+        margin-left: 8%;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        li{
+        i{
+            margin-right: 40px;
+        }
+        }
+    }
+}
+}

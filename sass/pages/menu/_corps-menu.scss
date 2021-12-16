@@ -119,10 +119,45 @@
         bottom: -7px; left: 45%;
     }
 }
-
 .plat{
     max-width: 70%;
     margin-left: 15%;
 }
+}
+
+@media screen and (min-width: 992px){
+
+.titre_menu{
+    font-size: xxx-large;
+    i{
+        font-size: xxx-large;
+    }
+}
+
+.fond-menu{
+    .categorie-menu{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+.categorie-menu{
+    h2{
+        text-align: left;
+        width: 90%;
+        font-size: xx-large;
+    }
+    span {
+        position: absolute;
+        bottom: -7px; left: 0px;
+    }
+}
+
+.plat{
+    margin: 0px;
+    max-width: 50%;
+    min-width: 30%;
+}
 
 }
+

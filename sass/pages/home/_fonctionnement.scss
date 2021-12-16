@@ -62,3 +62,20 @@
     }
 }
 }
+
+@media screen and (min-width: 992px){
+
+#fonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    
+    h2{
+        width: 80%;
+    }
+}
+#fonctionnement div {
+    width: 28%;
+}
+}

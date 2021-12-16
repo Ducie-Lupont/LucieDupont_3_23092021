@@ -30,5 +30,21 @@ header {
         top: 40px; left: 40px;
     }
 }
-    
+}
+
+@media screen and (min-width: 992px){
+
+header {
+    width: 50%;
+    height: 100px;
+    img {
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    .fa-arrow-left{
+        font-size: xx-large;
+        top: 40px; left: 40px;
+    }
+}
 }
