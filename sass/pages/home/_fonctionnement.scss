@@ -11,7 +11,7 @@
 
 }
 
-#fonctionnement .test2 {
+#fonctionnement .carte_fonctionnement {
     background: $fond-clair;
     padding: 25px;
     font-weight: bold;
@@ -19,7 +19,7 @@
     border-radius: 20px;
     box-shadow: $ombre;
 
-    .test {
+    .cercle_numero {
         position: absolute;
         top: 25px; left: -10px;
         background: $primaire;
@@ -40,19 +40,28 @@
     }
 }
 
+#fonctionnement .violet {
+    background-color: $fond-violet;
+
+    i{
+    color: $primaire;
+    }
+}
+
 @media screen and (min-width: 768px){
 
 #fonctionnement {
     font-size: x-large;
 }
-#fonctionnement div {
+#fonctionnement .carte_fonctionnement {
     padding: 50px 25px 50px 25px;
     border-radius: 40px;
     
-    span {
+    .cercle_numero {
         top: 50px; left: -10px;
-        height: 24px;
+        height: 30px;
         width: 30px;
+        line-height: 25px;
     }
 
     i {
@@ -74,7 +83,7 @@
         width: 80%;
     }
 }
-#fonctionnement div {
+#fonctionnement .carte_fonctionnement {
     width: 28%;
 }
 }
