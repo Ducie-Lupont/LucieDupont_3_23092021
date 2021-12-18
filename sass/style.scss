@@ -1,5 +1,6 @@
 @import 'base/fonts';
 @import 'base/colors-shadows';
+@import 'base/base';
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -11,9 +12,3 @@
 @import 'pages/menu/photo-menu';
 @import 'pages/menu/corps-menu';
 @import 'pages/menu/btn-menu';
-
-body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}

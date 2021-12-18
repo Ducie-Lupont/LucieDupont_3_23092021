@@ -34,7 +34,6 @@
             color: $darkgrey-text;
             position: relative;
         }
-@media screen and (max-width: 767px){
         span {
             width: 10%;
             height: 3px;
@@ -42,7 +41,7 @@
             position: absolute;
             bottom: -7px; left: 0px;
 
-        }}
+        }
     }
 }
 
@@ -104,7 +103,7 @@
         font-size:x-large;
     }
 }
-
+.fond-menu{
 .categorie-menu {
 
     h2{
@@ -119,9 +118,11 @@
         bottom: -7px; left: 45%;
     }
 }
+}
 .plat{
     max-width: 70%;
     margin-left: 15%;
+    height: 90px;
 }
 }
 
@@ -158,6 +159,4 @@
     max-width: 50%;
     min-width: 30%;
 }
-
 }
-

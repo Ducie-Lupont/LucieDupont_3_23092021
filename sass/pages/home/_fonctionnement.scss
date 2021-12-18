@@ -11,7 +11,7 @@
 
 }
 
-#fonctionnement div {
+#fonctionnement .test2 {
     background: $fond-clair;
     padding: 25px;
     font-weight: bold;
@@ -19,18 +19,17 @@
     border-radius: 20px;
     box-shadow: $ombre;
 
-    span {
+    .test {
         position: absolute;
         top: 25px; left: -10px;
         background: $primaire;
         border-radius: 50%;
-        height: 19px;
-        width: 25px;
-        padding-top: 3px;
-        padding-bottom: 3px;
         text-align: center;
         color: white;
         font-weight: normal;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
     }
 
     i {
