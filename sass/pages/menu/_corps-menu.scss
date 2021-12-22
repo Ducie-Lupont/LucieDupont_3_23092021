@@ -9,9 +9,25 @@
 
 
     i {
-        color: $darkgrey-text;
         position: absolute;
         bottom: 22px; right: 30px;
+        &.coeur_bordure{
+            color: $darkgrey-text;
+            font-weight: 400;
+            background-color: $fond-clair;
+            transition-property: color, background-color;
+            transition-duration: 250ms;
+            &:hover{
+                color: transparent;
+                background-color: transparent;
+            }
+        }
+        &.coeur_couleur{
+            font-weight: 900;
+            background: -webkit-linear-gradient($primaire, $secondaire);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
 .fond-menu {

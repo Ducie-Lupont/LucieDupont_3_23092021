@@ -53,12 +53,28 @@
         color: $darkgrey-text;
     }
 
-    i {
+    .fa-heart {
         position: absolute;
         bottom: 40px; right: 25px;
         font-size: x-large;
-        font-weight: lighter;
-        color: $darkgrey-text;
+        &.coeur_bordure{
+            color: $darkgrey-text;
+            font-weight: 400;
+            background-color: white;
+            transition-property: color, background-color;
+            transition-duration: 250ms;
+            &:hover{
+                color: transparent;
+                background-color: transparent;
+            }
+        }
+        &.coeur_couleur{
+            font-weight: 900;
+            background: -webkit-linear-gradient($primaire, $secondaire);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
     }
 
     .nouveau {
@@ -75,6 +91,7 @@
         border-radius: 5px;
     }
 }
+
 
 @media screen and (min-width:992px){
 

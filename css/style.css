@@ -20,6 +20,94 @@ body {
   padding: 0px;
 }
 
+@keyframes remplissage_coeur {
+  from {
+    color: #3c3c3c;
+    font-weight: 400;
+  }
+  50% {
+    color: transparent;
+    font-weight: 400;
+  }
+  to {
+    color: linear-gradient(to bottom, blue 50%, white 50%);
+    font-weight: 900;
+  }
+}
+.loading_spinner {
+  z-index: 50;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  animation-name: spinner_off;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.loading_spinner .lds-support {
+  z-index: 51;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation-name: spinner_off;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spinner_off {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+}
+/*loading.io/css*/
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #9356DC;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
 header {
   position: relative;
 }
@@ -318,13 +406,28 @@ nav a {
   left: 10px;
   color: #3c3c3c;
 }
-#restaurants div i {
+#restaurants div .fa-heart {
   position: absolute;
   bottom: 40px;
   right: 25px;
   font-size: x-large;
-  font-weight: lighter;
+}
+#restaurants div .fa-heart.coeur_bordure {
   color: #3c3c3c;
+  font-weight: 400;
+  background-color: white;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+}
+#restaurants div .fa-heart.coeur_bordure:hover {
+  color: transparent;
+  background-color: transparent;
+}
+#restaurants div .fa-heart.coeur_couleur {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #restaurants div .nouveau {
   background: #9df7cd;
@@ -398,10 +501,26 @@ nav a {
   width: auto;
 }
 .titre_menu i {
-  color: #3c3c3c;
   position: absolute;
   bottom: 22px;
   right: 30px;
+}
+.titre_menu i.coeur_bordure {
+  color: #3c3c3c;
+  font-weight: 400;
+  background-color: whitesmoke;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+}
+.titre_menu i.coeur_bordure:hover {
+  color: transparent;
+  background-color: transparent;
+}
+.titre_menu i.coeur_couleur {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fond-menu {

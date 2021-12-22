@@ -1,0 +1,15 @@
+
+@keyframes remplissage_coeur{
+    from {
+        color: $darkgrey-text;
+        font-weight: 400;
+    }
+    50%{
+        color: transparent;
+        font-weight: 400;
+    }
+    to {
+        color: linear-gradient(to bottom, blue 50%, white 50%);
+        font-weight: 900;
+    }
+}
