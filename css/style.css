@@ -20,20 +20,6 @@ body {
   padding: 0px;
 }
 
-@keyframes remplissage_coeur {
-  from {
-    color: #3c3c3c;
-    font-weight: 400;
-  }
-  50% {
-    color: transparent;
-    font-weight: 400;
-  }
-  to {
-    color: linear-gradient(to bottom, blue 50%, white 50%);
-    font-weight: 900;
-  }
-}
 .loading_spinner {
   z-index: 50;
   position: fixed;
@@ -58,21 +44,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-@keyframes spinner_off {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-  }
-  100% {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
-  }
-}
 /*loading.io/css*/
 .lds-ripple {
   display: inline-block;
@@ -94,6 +65,45 @@ body {
   animation-delay: -0.5s;
 }
 
+@keyframes apparition_catmenu {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes apparition_plats {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  50% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes spinner_off {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+}
 @keyframes lds-ripple {
   0% {
     top: 70px;
@@ -546,6 +556,10 @@ nav a {
   font-size: large;
   color: #3c3c3c;
   position: relative;
+  animation-name: apparition_catmenu;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
 }
 .fond-menu .categorie-menu span {
   width: 10%;
@@ -565,6 +579,10 @@ nav a {
   flex-wrap: wrap;
   flex-direction: column;
   max-width: 100%;
+  animation-name: apparition_plats;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
 }
 .plat .nom-plat {
   padding: 5px 0px 0px 10px;
