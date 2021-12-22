@@ -1,0 +1,17 @@
+@import 'base/fonts';
+@import 'base/colors-shadows';
+@import 'base/base';
+/*@import 'base/spinner';*/
+
+@import 'composants/keyframes';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home/nav';
+@import 'pages/home/fonctionnement';
+@import 'pages/home/restaurants';
+
+@import 'pages/menu/photo-menu';
+@import 'pages/menu/corps-menu';
+@import 'pages/menu/btn-menu';

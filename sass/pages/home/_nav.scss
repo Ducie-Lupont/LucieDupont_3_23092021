@@ -1,0 +1,68 @@
+nav {
+    background-color: $fond-clair;
+    text-align: center;
+    padding-bottom: 60px;
+
+    h3{
+        background-color: $fond-medium;
+        margin: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        color: $darkgrey-text;
+
+            .fa-map-marker-alt {
+                margin: 0px;
+                padding: 0px;
+                margin-right: 10px;
+                color: $darkgrey-text;  }
+    }
+
+    p {
+        padding-bottom: 25px;
+        color: $darkgrey-text;
+        max-width: 96%;
+    }
+    
+    a {
+        background: linear-gradient($secondaire, $primaire) ;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+nav {
+    padding-top: 40px;
+    box-shadow: $ombre;
+    h3{
+        position: absolute;
+        top: 0px; right: 0px;
+        width: 30%;
+        height: 20px;
+        padding: 40px 0px 40px 0px;
+        font-size: x-large;
+        
+
+        .fa-map-marker-alt{
+            font-size: x-large;
+        }
+    }
+    h1{
+        padding: 0px;
+        margin: 0px;
+        font-size: xx-large;
+    }
+    p{
+        font-size: x-large;
+    }
+    a{
+        font-size: x-large;
+        padding: 25px;
+        border-radius: 50px;
+    }
+}
+}

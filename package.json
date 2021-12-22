@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss ./css/style.css" 
+    "sass": "sass --watch ./sass/style.scss ./css/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,4 +16,5 @@
     "url": "https://github.com/Ducie-Lupont/LucieDupont_3_23092021/issues"
   },
   "homepage": "https://github.com/Ducie-Lupont/LucieDupont_3_23092021#readme"
+
 }

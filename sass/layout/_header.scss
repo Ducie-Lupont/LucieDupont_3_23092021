@@ -1,0 +1,50 @@
+header {
+    position: relative;
+
+    img {
+        width: 60%;
+        margin-left: 20%;
+        padding-top: 30px;
+        padding-bottom: 15px;
+
+    }
+
+    .fa-arrow-left {
+        position: absolute;
+        top: 30px; left: 20px;
+        font-weight: bold;
+        font-size: x-large;
+        color: $darkgrey-text;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+header {
+    img {
+        width: 36%;
+        margin-left: 32%;
+    }
+
+    .fa-arrow-left {
+        top: 40px; left: 40px;
+    }
+}
+}
+
+@media screen and (min-width: 992px){
+
+header {
+    width: 50%;
+    height: 100px;
+    img {
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    .fa-arrow-left{
+        font-size: xx-large;
+        top: 40px; left: 40px;
+    }
+}
+}
