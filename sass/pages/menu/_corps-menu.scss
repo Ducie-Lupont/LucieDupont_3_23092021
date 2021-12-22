@@ -77,7 +77,7 @@
     max-width: 100%;
     animation-name: apparition_plats;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1.7s;
     animation-duration: 2s;
 
     .nom-plat {
@@ -109,9 +109,41 @@
         margin: 0px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
+        
 
-        h4 {
-            margin: 0px 0px 10px 0px;
+        .case_check {
+            position: absolute;
+            top: 0px; right: 0px;
+            display: flex;
+            background: $tertiaire;
+            height: 100%;
+            width: 0px;
+            margin-left: 1px;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            overflow: hidden;
+            animation-name: check_case;
+            animation-duration:1s;
+            animation-fill-mode: none;
+            animation-iteration-count: infinite;
+
+            .fa-check-circle {
+                color: white;
+                font-size: large;
+                animation-name: check_plat;
+                animation-duration:1s;
+                animation-fill-mode: none;
+                animation-iteration-count: infinite;
+                position: relative;
+
+                h4 {
+                    position: absolute;
+                    top: center; right: 50px;
+                    margin: 0px 5px 10px 0px;
+                }
+            }
         }
     }
 
