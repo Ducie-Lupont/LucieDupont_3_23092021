@@ -585,6 +585,9 @@ nav a {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.plat .prix-plat h4 {
+  margin: 0px 5px 10px 0px;
+}
 .plat .prix-plat .case_check {
   position: absolute;
   top: 0px;
@@ -611,13 +614,6 @@ nav a {
   animation-duration: 1s;
   animation-fill-mode: none;
   animation-iteration-count: infinite;
-  position: relative;
-}
-.plat .prix-plat .case_check .fa-check-circle h4 {
-  position: absolute;
-  top: center;
-  right: 50px;
-  margin: 0px 5px 10px 0px;
 }
 
 @media screen and (min-width: 768px) {

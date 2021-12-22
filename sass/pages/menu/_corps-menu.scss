@@ -110,7 +110,10 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         
-
+        h4 {
+            margin: 0px 5px 10px 0px;
+        }
+        
         .case_check {
             position: absolute;
             top: 0px; right: 0px;
@@ -136,14 +139,8 @@
                 animation-duration:1s;
                 animation-fill-mode: none;
                 animation-iteration-count: infinite;
-                position: relative;
-
-                h4 {
-                    position: absolute;
-                    top: center; right: 50px;
-                    margin: 0px 5px 10px 0px;
-                }
             }
+            
         }
     }
 
