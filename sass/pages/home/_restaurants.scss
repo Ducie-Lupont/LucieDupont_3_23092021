@@ -72,6 +72,7 @@
             font-weight: 900;
             background: -webkit-linear-gradient($primaire, $secondaire);
             background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
