@@ -27,11 +27,12 @@
 
 @keyframes check_case{
     0%{
-        padding-right: 1px;
+        transform: translateX(100%);
         width: 0px;
     }
     100%{
-        width: 60px;
+        transform: translateX(0%);
+        width: 50%;
     }
 }
 

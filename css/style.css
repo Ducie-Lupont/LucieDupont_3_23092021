@@ -91,11 +91,12 @@ body {
 }
 @keyframes check_case {
   0% {
-    padding-right: 1px;
+    transform: translateX(100%);
     width: 0px;
   }
   100% {
-    width: 60px;
+    transform: translateX(0%);
+    width: 50%;
   }
 }
 @keyframes check_plat {
@@ -607,7 +608,7 @@ nav a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 81%;
+  max-width: 80%;
 }
 .plat .info-plat {
   padding: 5px 0px 0px 10px;
@@ -616,48 +617,46 @@ nav a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 81%;
+  max-width: 80%;
 }
 .plat .prix-plat {
+  background: red;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  align-self: flex-end;
-  width: 60px;
+  text-align: center;
+  min-width: 20%;
   height: 60px;
   margin: 0px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 .plat .prix-plat h4 {
-  margin: 0px 5px 10px 0px;
+  width: 50%;
+  margin: 0px 0px 10px 0px;
 }
 .plat .prix-plat .case_check {
-  position: absolute;
-  top: 0px;
-  right: 0px;
   display: flex;
   background: #99E2D0;
   height: 100%;
   width: 0px;
-  margin-left: 1px;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
+}
+.plat .prix-plat .case_check:hover {
   animation-name: check_case;
   animation-duration: 1s;
-  animation-fill-mode: none;
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 .plat .prix-plat .case_check .fa-check-circle {
   color: white;
   font-size: large;
   animation-name: check_plat;
   animation-duration: 1s;
-  animation-fill-mode: none;
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 @media screen and (min-width: 768px) {

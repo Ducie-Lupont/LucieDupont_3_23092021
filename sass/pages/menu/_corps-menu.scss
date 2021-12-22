@@ -86,7 +86,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 81%;
+        max-width: 80%;
     }
 
     .info-plat {
@@ -96,49 +96,48 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 81%;
+        max-width: 80%;
     }
 
     .prix-plat {
+        background: red;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        align-self: flex-end;
-        width: 60px;
+        text-align: center;
+        min-width: 20%;
         height: 60px;
         margin: 0px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         
         h4 {
-            margin: 0px 5px 10px 0px;
+            width: 50%;
+            margin: 0px 0px 10px 0px;
         }
-        
+
         .case_check {
-            position: absolute;
-            top: 0px; right: 0px;
             display: flex;
             background: $tertiaire;
             height: 100%;
             width: 0px;
-            margin-left: 1px;
             align-items: center;
             justify-content: center;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             overflow: hidden;
+            &:hover{
             animation-name: check_case;
             animation-duration:1s;
-            animation-fill-mode: none;
-            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;}
+            
 
             .fa-check-circle {
                 color: white;
                 font-size: large;
                 animation-name: check_plat;
                 animation-duration:1s;
-                animation-fill-mode: none;
-                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
             }
             
         }
