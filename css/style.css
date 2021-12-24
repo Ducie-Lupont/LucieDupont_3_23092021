@@ -91,12 +91,10 @@ body {
 }
 @keyframes check_case {
   0% {
-    transform: translateX(100%);
     width: 0px;
   }
   100% {
-    transform: translateX(0%);
-    width: 50%;
+    width: 50px;
   }
 }
 @keyframes check_plat {
@@ -596,7 +594,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   animation-name: apparition_plats;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
@@ -608,7 +606,7 @@ nav a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 80%;
+  width: calc(100% - 110px);
 }
 .plat .info-plat {
   padding: 5px 0px 0px 10px;
@@ -617,23 +615,22 @@ nav a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 80%;
+  width: calc(100% - 110px);
 }
 .plat .prix-plat {
   background: red;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: center;
-  min-width: 20%;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50px;
   height: 60px;
   margin: 0px;
+  padding: 0px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.plat .prix-plat h4 {
-  width: 50%;
-  margin: 0px 0px 10px 0px;
+.plat .prix-plat:hover {
+  width: 100px;
 }
 .plat .prix-plat .case_check {
   display: flex;
@@ -646,17 +643,32 @@ nav a {
   border-bottom-right-radius: 15px;
   overflow: hidden;
 }
-.plat .prix-plat .case_check:hover {
+.plat .prix-plat .case_check .fa-check-circle {
+  color: white;
+  font-size: large;
+}
+.plat .prix-plat:hover .case_check {
   animation-name: check_case;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-.plat .prix-plat .case_check .fa-check-circle {
-  color: white;
-  font-size: large;
+.plat .prix-plat:hover .case_check > .fa-check-circle {
   animation-name: check_plat;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+.plat .prix-plat .prix {
+  background: chartreuse;
+  display: flex;
+  width: 50px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+.plat .prix-plat .prix h4 {
+  margin: 10px 0px 0px 0px;
 }
 
 @media screen and (min-width: 768px) {
