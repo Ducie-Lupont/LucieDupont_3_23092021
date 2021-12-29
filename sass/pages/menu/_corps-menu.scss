@@ -86,7 +86,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: calc(100% - 110px);
+        width: calc(100% - 50px);
+        order: 1;
     }
 
     .info-plat {
@@ -96,7 +97,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: calc(100% - 110px);
+        width: calc(100% - 50px);
+        order: 2;
     }
 
     .prix-plat {
@@ -104,12 +106,14 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        align-self: flex-end;
         width: 50px;
         height: 60px;
         margin: 0px;
         padding: 0px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
+        order: 3;
         &:hover {
             width: 100px;
         }
@@ -142,6 +146,19 @@
             animation-duration:1s;
             animation-fill-mode: forwards;
         }
+
+        &:hover ~ .info-plat{
+            animation-name: check_text;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        &:hover ~ .nom-plat{
+            animation-name: check_text;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
         
         .prix{
             background: chartreuse;

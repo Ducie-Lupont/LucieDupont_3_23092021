@@ -43,6 +43,15 @@
     }
 }
 
+@keyframes check_text{
+    0%{
+        width: calc(100% - 50px);
+    }
+    100%{
+        width: calc(100% - 100px);
+    }
+}
+
 @keyframes spinner_off {
     0%{
         opacity: 1;
