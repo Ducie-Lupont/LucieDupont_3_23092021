@@ -640,6 +640,8 @@ nav a {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   order: 3;
+  transition-property: width;
+  transition-duration: 1s;
 }
 .plat .prix-plat:hover {
   width: 100px;

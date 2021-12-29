@@ -114,7 +114,9 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         order: 3;
-        &:hover {
+        transition-property: width;
+        transition-duration: 1s;
+        &:hover{
             width: 100px;
         }
 
