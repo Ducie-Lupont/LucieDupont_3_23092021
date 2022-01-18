@@ -708,8 +708,35 @@ nav a {
   }
 
   .plat {
-    max-width: 70%;
-    margin-left: 15%;
+    height: 90px;
+  }
+  .plat .nom-plat {
+    width: calc(100% - 75px);
+  }
+  .plat .info-plat {
+    width: calc(100% - 75px);
+  }
+  .plat .prix-plat {
+    width: 75px;
+    height: 90px;
+  }
+  .plat .prix-plat .case_check {
+    margin-right: 10px;
+  }
+  .plat .prix-plat:hover {
+    width: 150px;
+  }
+  .plat .prix-plat:hover .case_check {
+    width: 75px;
+  }
+  .plat .prix-plat:hover ~ .info-plat {
+    width: calc(100% - 150px);
+  }
+  .plat .prix-plat:hover ~ .nom-plat {
+    width: calc(100% - 150px);
+  }
+  .plat .prix-plat .prix {
+    width: 75px;
     height: 90px;
   }
 }
