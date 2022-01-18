@@ -88,6 +88,8 @@
         white-space: nowrap;
         width: calc(100% - 50px);
         order: 1;
+        transition-property: width;
+        transition-duration: 1s;
     }
 
     .info-plat {
@@ -99,10 +101,11 @@
         white-space: nowrap;
         width: calc(100% - 50px);
         order: 2;
+        transition-property: width;
+        transition-duration: 1s;
     }
 
     .prix-plat {
-        background: red;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -125,11 +128,15 @@
             background: $tertiaire;
             height: 100%;
             width: 0px;
+            
+        margin-right: 10px;
             align-items: center;
             justify-content: center;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             overflow: hidden;
+            transition-property: width;
+            transition-duration: 1s;
             
         .fa-check-circle {
             color: white;
@@ -138,9 +145,7 @@
         }
 
         &:hover .case_check{
-            animation-name: check_case;
-            animation-duration:1s;
-            animation-fill-mode: forwards;
+            width: 50px;
         }
 
         &:hover .case_check > .fa-check-circle {
@@ -150,20 +155,15 @@
         }
 
         &:hover ~ .info-plat{
-            animation-name: check_text;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
+            width: calc(100% - 100px);
         }
 
         &:hover ~ .nom-plat{
-            animation-name: check_text;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
+            width: calc(100% - 100px);
         }
 
         
         .prix{
-            background: chartreuse;
             display: flex;
             width: 50px;
             height: 60px;

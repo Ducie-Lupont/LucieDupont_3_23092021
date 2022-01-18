@@ -89,28 +89,18 @@ body {
     margin-top: 0px;
   }
 }
-@keyframes check_case {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50px;
-  }
-}
 @keyframes check_plat {
   0% {
-    rotate: 0deg;
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 360deg;
-  }
-}
-@keyframes check_text {
-  0% {
-    width: calc(100% - 50px);
-  }
-  100% {
-    width: calc(100% - 100px);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes spinner_off {
@@ -616,6 +606,8 @@ nav a {
   white-space: nowrap;
   width: calc(100% - 50px);
   order: 1;
+  transition-property: width;
+  transition-duration: 1s;
 }
 .plat .info-plat {
   padding: 5px 0px 0px 10px;
@@ -626,9 +618,10 @@ nav a {
   white-space: nowrap;
   width: calc(100% - 50px);
   order: 2;
+  transition-property: width;
+  transition-duration: 1s;
 }
 .plat .prix-plat {
-  background: red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -651,20 +644,21 @@ nav a {
   background: #99E2D0;
   height: 100%;
   width: 0px;
+  margin-right: 10px;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
+  transition-property: width;
+  transition-duration: 1s;
 }
 .plat .prix-plat .case_check .fa-check-circle {
   color: white;
   font-size: large;
 }
 .plat .prix-plat:hover .case_check {
-  animation-name: check_case;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  width: 50px;
 }
 .plat .prix-plat:hover .case_check > .fa-check-circle {
   animation-name: check_plat;
@@ -672,17 +666,12 @@ nav a {
   animation-fill-mode: forwards;
 }
 .plat .prix-plat:hover ~ .info-plat {
-  animation-name: check_text;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  width: calc(100% - 100px);
 }
 .plat .prix-plat:hover ~ .nom-plat {
-  animation-name: check_text;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  width: calc(100% - 100px);
 }
 .plat .prix-plat .prix {
-  background: chartreuse;
   display: flex;
   width: 50px;
   height: 60px;
