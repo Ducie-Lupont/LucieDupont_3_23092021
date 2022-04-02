@@ -25,22 +25,19 @@
     }
 }
 
-@keyframes check_case{
-    0%{
-        padding-right: 1px;
-        width: 0px;
-    }
-    100%{
-        width: 60px;
-    }
-}
-
 @keyframes check_plat{
     0%{
-        rotate: 0deg;
+        -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+
     }
     100%{
-        rotate: 360deg;
+        -moz-transform: rotate(360deg);
+	    -o-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	    transform: rotate(360deg);
     }
 }
 

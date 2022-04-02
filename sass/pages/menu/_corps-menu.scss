@@ -74,7 +74,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     animation-name: apparition_plats;
     animation-fill-mode: forwards;
     animation-delay: 1.7s;
@@ -86,7 +86,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 81%;
+        width: calc(100% - 50px);
+        order: 1;
+        transition-property: width;
+        transition-duration: 1s;
     }
 
     .info-plat {
@@ -96,55 +99,82 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 81%;
+        width: calc(100% - 50px);
+        order: 2;
+        transition-property: width;
+        transition-duration: 1s;
     }
 
     .prix-plat {
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
         align-self: flex-end;
-        width: 60px;
+        width: 50px;
         height: 60px;
         margin: 0px;
+        padding: 0px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        
+        order: 3;
+        transition-property: width;
+        transition-duration: 1s;
+        &:hover{
+            width: 100px;
+        }
 
         .case_check {
-            position: absolute;
-            top: 0px; right: 0px;
             display: flex;
             background: $tertiaire;
             height: 100%;
             width: 0px;
-            margin-left: 1px;
+            margin-right: 10px;
             align-items: center;
             justify-content: center;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             overflow: hidden;
-            animation-name: check_case;
+            transition-property: width;
+            transition-duration: 1s;
+            
+        .fa-check-circle {
+            color: white;
+            font-size: large;}
+            
+        }
+
+        &:hover .case_check{
+            width: 50px;
+        }
+
+        &:hover .case_check > .fa-check-circle {
+            animation-name: check_plat;
             animation-duration:1s;
-            animation-fill-mode: none;
-            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
 
-            .fa-check-circle {
-                color: white;
-                font-size: large;
-                animation-name: check_plat;
-                animation-duration:1s;
-                animation-fill-mode: none;
-                animation-iteration-count: infinite;
-                position: relative;
+        &:hover ~ .info-plat{
+            width: calc(100% - 100px);
+        }
 
-                h4 {
-                    position: absolute;
-                    top: center; right: 50px;
-                    margin: 0px 5px 10px 0px;
-                }
+        &:hover ~ .nom-plat{
+            width: calc(100% - 100px);
+        }
+
+        
+        .prix{
+            display: flex;
+            width: 50px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            h4 {
+                margin: 10px 0px 0px 0px;
             }
         }
+
     }
 
 }
@@ -177,11 +207,46 @@
 }
 }
 .plat{
-    max-width: 70%;
-    margin-left: 15%;
     height: 90px;
-}
-}
+    .nom-plat {
+        width: calc(100% - 75px);
+    }
+
+    .info-plat {
+        width: calc(100% - 75px);
+    }
+
+    .prix-plat {
+        width: 75px;
+        height: 90px;
+
+        .case_check{
+            margin-right: 10px;
+        }
+        &:hover{
+            width: 150px;
+        }
+
+        &:hover .case_check{
+            width: 75px;
+        }
+
+        &:hover ~ .info-plat{
+            width: calc(100% - 150px);
+        }
+
+        &:hover ~ .nom-plat{
+            width: calc(100% - 150px);
+        }
+
+        
+        .prix{
+            width: 75px;
+            height: 90px;
+        }
+
+    }
+}}
 
 @media screen and (min-width: 992px){
 
